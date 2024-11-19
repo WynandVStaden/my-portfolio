@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 
 // Game settings
 const gridSize = 20;
-const canvasSize = 300;
+const canvasSize = 250;
 const directions = { up: 'UP', down: 'DOWN', left: 'LEFT', right: 'RIGHT' };
 
 // Initial Snake Setup
@@ -118,7 +118,7 @@ function startGame() {
     startScreen.style.display = 'none'; // Hide the start screen
 
     gameStarted = true; // Mark game as started
-    gameInterval = setInterval(gameLoop, 110); // Start the game loop
+    gameInterval = setInterval(gameLoop, 120); // Start the game loop
 }
 
 // Event listener to change direction
