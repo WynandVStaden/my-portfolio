@@ -100,3 +100,130 @@ button {
     color: #333;
     margin-top: 20px;
 }
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh; /* Full viewport height */
+  }
+.icon {
+    width: 200px;
+    height: 300px;
+}
+
+/* Ensure the content is scrollable */
+.scrollable {
+    max-height: 100vh;
+    overflow: auto;
+}
+
+/* Center profile picture */
+.center-image {
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+}
+
+/* Profile photo */
+.icon {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Arrows */
+.arrow {
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    background-color: #555;
+    display: block;
+    z-index: -1;
+}
+
+/* Top arrow */
+.arrow-top {
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow-top::before {
+    width: 2px;
+    height: 50px;
+    top: 100%;
+    left: 50%;
+}
+.arrow-top span {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Right arrow */
+.arrow-right {
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+}
+.arrow-right::before {
+    width: 100px;
+    height: 2px;
+    top: 50%;
+    right: 100%;
+}
+.arrow-right span {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Bottom arrow */
+.arrow-bottom {
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow-bottom::before {
+    width: 2px;
+    height: 50px;
+    bottom: 100%;
+    left: 50%;
+}
+.arrow-bottom span {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Left arrow */
+.arrow-left {
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+}
+.arrow-left::before {
+    width: 100px;
+    height: 2px;
+    top: 50%;
+    left: 100%;
+}
+.arrow-left span {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
