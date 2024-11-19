@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">View CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+
+<section id="snake-game">
+    <h2>Play Snake Game</h2>
+    
+    <!-- Start and Restart Buttons -->
+    <div id="buttons-container">
+        <div id="start-screen">
+            <button id="start-btn">Start Game</button>
+        </div>
+        <div id="game-over-screen" class="hidden">
+            <h3>Game Over!</h3>
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+
+    <!-- Game Canvas and Controls -->
+    <div id="game-container">
+        <canvas id="snakeCanvas" width="400" height="400"></canvas>
+        <div id="controls">
+            <button id="up-btn">⬆️</button>
+            <div>
+                <button id="left-btn">⬅️</button>
+                <button id="right-btn">➡️</button>
+            </div>
+            <button id="down-btn">⬇️</button>
+        </div>
+    </div>
+
+    <p>Click "Start Game" to begin playing. Use arrow keys or the on-screen buttons to control the snake!</p>
+</section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wynand van Staden</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
