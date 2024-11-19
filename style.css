@@ -113,9 +113,14 @@ button {
 }
 
 /* Ensure the content is scrollable */
+/* Scrollable Section */
 .scrollable {
-    max-height: 100vh;
-    overflow: auto;
+    max-height: 100vh; /* Limit the height to make it scrollable */
+    overflow: auto; /* Enable scrolling */
+    background-color: #f5f5f5; /* Light gray background color */
+    padding: 20px; /* Add some padding for better spacing */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow */
 }
 
 /* Center profile picture */
@@ -131,7 +136,7 @@ button {
 .icon {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
+    height: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -227,3 +232,26 @@ button {
     border-radius: 3px;
 }
 
+/* Collage Section */
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 1px; /* Space between images */
+    padding: 1px;
+    margin-top: 20px;
+    justify-items: center; /* Center images horizontally */
+}
+
+/* Collage Images */
+.collage-item img {
+    width: 100%; /* Make images responsive */
+    max-width: 1000px; /* Limit maximum size */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.collage-item img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
