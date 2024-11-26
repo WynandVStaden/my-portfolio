@@ -257,9 +257,10 @@ button {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
+/* Carousel Styling */
 .carousel {
     position: relative;
-    width: 80%;
+    width: 60%; /* Adjusted width for smaller images */
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -272,7 +273,9 @@ button {
 }
 
 .carousel-images img {
-    width: 100%;
+    width: 60%; /* Smaller images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
     flex-shrink: 0;
 }
 
@@ -283,21 +286,21 @@ button {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 36px; /* Increased button size */
+    padding: 20px; /* Larger clickable area */
     cursor: pointer;
     z-index: 10;
+    border-radius: 50%; /* Circular buttons */
 }
 
 .carousel-btn.prev {
-    left: 10px;
+    left: 10px; /* Adjust button position */
 }
 
 .carousel-btn.next {
-    right: 10px;
+    right: 10px; /* Adjust button position */
 }
 
 .carousel-btn:hover {
     background: rgba(0, 0, 0, 0.8);
 }
-
