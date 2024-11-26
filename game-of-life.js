@@ -1,6 +1,6 @@
 const canvas = document.getElementById('gameOfLifeCanvas');
 const ctx = canvas.getContext('2d');
-const gridSize = 10;
+const gridSize = 10 / 2;
 const rows = canvas.height / gridSize;
 const cols = canvas.width / gridSize;
 
@@ -32,8 +32,8 @@ function drawGrid(grid) {
     // Define oval properties
     const centerX = Math.floor(cols / 2);
     const centerY = Math.floor(rows / 2);
-    const radiusX = Math.floor(cols / 4);
-    const radiusY = Math.floor(rows / 4);
+    const radiusX = Math.floor(cols / 6);
+    const radiusY = Math.floor(rows / 6);
 
     grid.forEach((row, r) => {
         row.forEach((cell, c) => {
@@ -152,6 +152,6 @@ drawGrid(grid);
 // Automatically start removing one black square every second
 setInterval(() => {
     removeRandomAliveCell(grid);
-}, 100);
+}, 1000);
 
 animate();
