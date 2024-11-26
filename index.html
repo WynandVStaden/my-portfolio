@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wynand van Staden</title>
     <link rel="stylesheet" href="style.css">
+    <script src="carousel.js" defer></script>
+    <script src="game-of-life.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -13,66 +16,66 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cv.html">View CV</a></li>
                 <li><a href="snake.html">Snake</a></li>
-
+                <li><a href="game-of-life.html">Game of Life</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
+              <!-- Game of Life Section -->
+<section id="game-of-life" data-hide-buttons="true">
+    <h2>I like creating simulations like these.</h2>
+    <canvas id="gameOfLifeCanvas" width="500" height="500"></canvas>
+    <div id="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+</section>
+
+        <!-- Advanced Collage Layout -->
         <section id="home">
-            <div class="scrollable">
-                <div class="center-image">
-                    <img src="images/pfp.jpg" alt="PFP Icon" class="icon" />
-    
-                    <!-- Arrows and Text -->
-                    <div class="arrow arrow-top">
-                        <span>Likes games</span>
-                    </div>
-                    <div class="arrow arrow-right">
-                        <span>Have a head</span>
-                    </div>
-                    <div class="arrow arrow-bottom">
-                        <span>Software developer</span>
-                    </div>
-                    <div class="arrow arrow-left">
-                        <span>Layman researcher</span>
-                    </div>
-                </div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my projects, skills, and hobbies!</p>
 
-                <h2> (Hobby) Stock trading with metatrader API </h2>
-                <div class="image-collage">
-                    <div class="collage-item">
-                        <img src="images/meta.png" alt="Image 1" />
+            <!-- Carousel Section -->
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/meta.png" alt="Project 1">
+                    <img src="images/knight.png" alt="Project 2">
+                    <img src="images/castle.png" alt="Project 3">
+                    <img src="images/wow.png" alt="Project 4">
                 </div>
-                </div>
-
-                <h2> (Hobby) Role-playing games </h2>
-                <div class="image-collage">
-                    <div class="collage-item">
-                        <img src="images/knight.png" alt="Image 1" />
-                    </div>
-                    <div class="collage-item">
-                        <img src="images/castle.png" alt="Image 2" />
-                    </div>
-                    <div class="collage-item">
-                        <img src="images/gg.png" alt="Image 3" />
-                    </div>
-                    <div class="collage-item">
-                        <img src="images/wow.png" alt="Image 4" />
-                    </div>
-                </div>
-
+                <button class="carousel-btn prev">⟨</button>
+                <button class="carousel-btn next">⟩</button>
             </div>
 
-
+            <!-- Collage Section -->
+            <h2>Hobbies and Projects</h2>
+            <div class="image-collage">
+                <div class="collage-item">
+                    <img src="images/meta.png" alt="Image 1">
+                </div>
+                <div class="collage-item">
+                    <img src="images/knight.png" alt="Image 2">
+                </div>
+                <div class="collage-item">
+                    <img src="images/castle.png" alt="Image 3">
+                </div>
+                <div class="collage-item">
+                    <img src="images/wow.png" alt="Image 4">
+                </div>
+            </div>
         </section>
+
+
+
+
     </main>
-    
 
     <footer>
         <p>&copy; 2024 Wynand van Staden</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
