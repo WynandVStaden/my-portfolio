@@ -3,79 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wynand van Staden</title>
+    <title>Wynand van Staden Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="carousel.js" defer></script>
     <script src="game-of-life.js" defer></script>
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header, footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .collapsible {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .content {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+            display: none;
+        }
+        .content a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .collapsible.active + .content {
+            display: block;
+        }
+        .catalogue {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        .catalogue ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .catalogue ul li {
+            margin: 5px 0;
+        }
+        .catalogue ul li a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">View CV</a></li>
-                <li><a href="snake.html">Snake</a></li>
-                <li><a href="game-of-life.html">Game of Life</a></li>
-            </ul>
-        </nav>
+        <h1>Wynand van Staden Portfolio</h1>
     </header>
 
     <main>
+        <!-- Catalogue Section -->
+         
+        <section class="catalogue">
+            <h2>Catalogue</h2>
+            <ul>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <ul>
+                    <li><a href="#project-stock-wizard">Stock Wizard</a></li>
+                    <li><a href="#project-radio-galaxy">Radio Galaxy Symmetry Finder</a></li>
+                    <li><a href="#project-message-protocols">Message Protocols Research</a></li>
+                    <li><a href="#project-markdown">Markdown Collaboration</a></li>
+                </ul>
+                <!-- <li><a href="#hobbies">Hobbies</a></li> -->
+            </ul>
+        </section> 
 
-              <!-- Game of Life Section -->
-<section id="game-of-life" data-hide-buttons="true">
-    <h2>Xplore my projects, skills, and hobbies!</h2>
-    <canvas id="gameOfLifeCanvas" width="250" height="250"></canvas>
-    <div id="controls">
-        <button id="start">Start</button>
-        <button id="pause">Pause</button>
-        <button id="reset">Reset</button>
-    </div>
-</section>
-
-        <!-- Advanced Collage Layout -->
-        <section id="home">
-            <h1>Stock Wizard</h1>
-            <p>A mobile app I created with flutter that screens stocks. (To be published soon)</p>
-
-            <!-- Carousel Section -->
-            <div class="carousel">
-                <div class="carousel-images">
-                    <img src="images/home.jpg" alt="The app home screen">
-                    <img src="images/screener.jpg" alt="A list of screened stocks">
-                    <img src="images/options.jpg" alt="Options for a selected stock">
-                    <img src="images/summary.jpg" alt="Get the summary of a company/stock">
-                </div>
-                <button class="carousel-btn prev">⟨</button>
-                <button class="carousel-btn next">⟩</button>
-            </div>
-
-            <!-- Collage Section -->
-            <h2>Hobbies include gaming and the attempt of trading:</h2>
-            <div class="image-collage">
-                <div class="collage-item">
-                    <img src="images/meta.png" alt="Image 1">
-                </div>
-                <div class="collage-item">
-                    <img src="images/knight.png" alt="Image 2">
-                </div>
-                <div class="collage-item">
-                    <img src="images/castle.png" alt="Image 3">
-                </div>
-                <div class="collage-item">
-                    <img src="images/wow.png" alt="Image 4">
-                </div>
+        <!-- Work Experience -->
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="collapsible">Outlier AI (Nov. 2024 - Present)</div>
+            <div class="content" style="display: block;">
+                <p><strong>Role:</strong> Prompt Engineer</p>
+                <p>I worked on training AI models for math problem solving by identifying reasoning errors and implementing fixes.</p>
             </div>
         </section>
 
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
 
+            <div class="collapsible" id="project-stock-wizard">Stock Wizard (Flutter)</div>
+            <div class="content" style="display: block;">
+                <p><strong>Description:</strong> A mobile app that screens stocks.</p>
+                <p><strong>Frontend:</strong> Built with Flutter.</p>
+                <p><strong>Backend:</strong> Created server-side logic in Node.js for scraping financial data.</p>
+            </div>
 
+            <div class="collapsible" id="project-radio-galaxy">Radio Galaxy Symmetry Finder</div>
+            <div class="content" style="display: block;">
+                <p><strong>Technologies:</strong> Python</p>
+                <p><strong>Reflexive Symmetry:</strong> Used PCA to classify radio galaxies based on reflexive properties.</p>
+                <p><strong>Curved Symmetry:</strong> Applied polynomial regression to classify galaxies with curved symmetry.</p>
+            </div>
+
+            <div class="collapsible" id="project-message-protocols">Message Protocols Research</div>
+            <div class="content" style="display: block;">
+                <p><strong>Technologies:</strong> Java, Spring Boot, React</p>
+                <p><strong>Description:</strong> Researched and tested message protocols between microservices. AMQP was found to be the most effective.</p>
+            </div>
+
+            <div class="collapsible" id="project-markdown">Markdown Collaboration</div>
+            <div class="content" style="display: block;">
+                <p><strong>Technologies:</strong> React, Node.js</p>
+                <p><strong>Description:</strong> Developed a collaborative markdown editor with real-time updates using WebSockets.</p>
+            </div>
+        </section>
 
     </main>
 
     <footer>
         <p>&copy; 2024 Wynand van Staden</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.collapsible').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>

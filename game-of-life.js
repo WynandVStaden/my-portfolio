@@ -148,6 +148,9 @@ function removeRandomAliveCell(grid) {
     grid[row+1][col] = 0;
     grid[row-2][col] = 0;
     grid[row+2][col] = 0;
+
+
+    
     grid[row][col-1] = 0;
     grid[row][col+1] = 0;
     grid[row][col-2] = 0;
